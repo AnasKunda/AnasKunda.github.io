@@ -5,10 +5,13 @@ Super massive blackhole
 </title>
 </head>
 <body>
-<img src="smb400x400.jpg" 
-		srcset="smb850x850.jpg 850w,
-				smb400x400.jpg 400w"
-		sizes="(min-width:1000px) 700px, 400px" 
-		alt="super massive blackhole">
+<picture>
+	<source srcset="smb850x850.jpg"
+			media="(min-width:1000px)">
+	<source srcset="smb600x600.jpg"
+			media="(min-width:700px)">
+	<source srcset="smb400x400.jpg">
+	<img src="smb400x400.jpg">
+</picture>
 </body>
 </html>
