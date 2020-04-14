@@ -23,10 +23,12 @@ a{
 
 .black {
   display: block;
+  color: white;
 }
 
 .holes {
   display: block;
+  color: white;
 }
 
 .all-para {
@@ -72,15 +74,37 @@ nav {
 	padding-bottom: 0px;
 }
 
-.video-window {
+video.video-window {
 	padding-top: 0px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 header {
 	width: 60%;
 	margin: 0 auto;
 	border: 10px solid black;
+	background: url(./star-map-blur.jpg) 30% 50%;
 }
+
+div.video-window {
+	background: url(./bw-straps.jpg);
+	width: 80%;
+	margin: 0 auto auto;
+}
+
+
+/*.banner-div {
+   width: 200px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -140%);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4rem;
+  border-radius: 50%;
+}*/
 
 	</style>
 
@@ -88,6 +112,8 @@ header {
 <body>
 	<header role="banner">
     <h1><span class="black">Black</span> <span class="holes">Holes</span></h1>
+    <div class="banner-div">
+    	</div>
 	</header>
   <!--Beginning of "all-para" -->
   <div class="all-para">
@@ -111,9 +137,11 @@ header {
     <div class="arrow-head">
     	
     </div>
+    <div class="video-window">
 <video class="video-window" controls preload="none" poster="bh_merger_re.png">
 	<source src="bh_collide.webm" type="video/webm">
 </video>
+</div>
     <!--End video-->
   </div>
 <nav>
