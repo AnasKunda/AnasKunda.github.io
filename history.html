@@ -46,8 +46,35 @@ hr {
   padding: 2px;
 }
 
-a{
+footer a{
   color: #FBDC4E;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  background: transparent;
+}
+
+footer a:hover {
+	color: #121212;
+	z-index: 2;
+	background: transparent;
+}
+
+footer a:after {
+	content: '.';
+	color: transparent;
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	width: 0%;
+	transition: all 1s ease;
+	background: #D6DBDF;
+	z-index: -10;
+}
+
+footer a:hover:after {
+	/*-webkit-animation: slide 2s ease forwards;*/
+	width: 100%;
 }
 
 details {
@@ -68,7 +95,20 @@ details {
 
 * {
   width: 100%;
+
 }
+
+@keyframes slide {
+	0% {
+		width: 0%;
+		background: transparent;
+	}
+	100% {
+		width: 100%;
+		background: #D6DBDF;
+	}
+}
+
 
 }
 
@@ -129,6 +169,8 @@ details {
 		<p class="content-para">
 			In December 1967, a student reportedly suggested the phrase "black hole" at a lecture by John Wheeler; Wheeler adopted the term for its brevity and "advertising value", and it quickly caught on, leading some to credit Wheeler with coining the phrase.
 		</p>
+
+		<p class="animation_test">animation test</p>
 	</article>
 	<footer>
 		<a href="./index.html">Back to Home</a>
