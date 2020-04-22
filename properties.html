@@ -44,9 +44,6 @@
 				padding: 2px;
 			}
 
-			a#backtohome {
-				color: #FBDC4E;
-			}
 
 			img.f1 {
 				background: #D6DBDF;
@@ -92,6 +89,38 @@
 					float: none;
 				}
 			}
+
+			footer a{
+  				color: #FBDC4E;
+  				position: relative;
+  				transition-property: all;
+  				transition-duration: 1s;
+  				background: transparent;
+  				text-decoration: none;
+}
+
+footer a:hover {
+	color: #121212;
+	z-index: 2;
+	background: transparent;
+}
+
+footer a:after {
+	content: '.';
+	color: transparent;
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	width: 0%;
+	transition: all 1s ease;
+	background: #D6DBDF;
+	z-index: -10;
+}
+
+footer a:hover:after {
+	/*-webkit-animation: slide 2s ease forwards;*/
+	width: 100%;
+}
 	</style>
 </head>
 <body>
@@ -198,7 +227,9 @@
 </div>
 <hr id="aftertable">
 <div class="back-to-home">
-<a id="backtohome" href="./index.html">Back to Home</a>
+<footer>
+	<a id="backtohome" href="./index.html">Back to Home</a>
+</footer>
 </div>
 </div>
 </body>
