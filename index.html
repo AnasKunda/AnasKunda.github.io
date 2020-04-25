@@ -337,6 +337,10 @@ body:not(:target) #menu {
  				color: white;
 
  			}
+
+ 			.drawer-nav-enabled body #menu ul li.marked {
+ 				padding-bottom: 0;
+ 			}
                 .drawer-nav-enabled body #menu ul li {
                 	display: block;
                 	padding-bottom: 10px;
@@ -535,7 +539,7 @@ video.video-window {
 <div class="nav">
 	<nav id="menu">
 		<ul>
-			<li><mark><a href="./index.html">Introduction</a></mark></li>
+			<li class="marked"><mark><a href="./index.html">Introduction</a></mark></li>
 			<li><a href="./history.html">History</a></li>
 			<li><a href="./properties.html">Properties and Structure</a></li>
 		</ul>

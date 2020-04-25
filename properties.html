@@ -244,10 +244,11 @@ body:not(:target) #menu {
             width: 0;
             max-width: 80%;
             position: absolute;
-            top: 0;
+            top: -27px;
             bottom: 0;
             left: 100%;
             z-index: 3;
+            background: #EDEDED;
                -moz-transition: width .25s ease;
                  -o-transition: width .25s ease;
             -webkit-transition: width .25s ease;
@@ -259,14 +260,20 @@ body:not(:target) #menu {
                 max-width: 100%;
                 text-align: left;
                 margin-top: 0;
+                background: #EDEDED;
             }
 
               .drawer-nav-enabled body #menu ul a {
                     height: auto;
                     text-decoration: none;
                     color: black;
+                    background: #EDEDED;
                 }
  			
+                .drawer-nav-enabled body #menu ul li.marked {
+ 				padding-bottom: 0;
+ 			}
+
                 .drawer-nav-enabled body #menu ul mark {
                 	width: 100%;
                 	display: block;
@@ -275,12 +282,13 @@ body:not(:target) #menu {
                 }
 
  			.drawer-nav-enabled body #menu ul mark a {
- 				color: white;
-
+ 				color: #EDEDED;
+ 				background: black;
  			}
                 .drawer-nav-enabled body #menu ul li {
                 	display: block;
                 	padding-bottom: 10px;
+                	background: #EDEDED;
                 }
                     .drawer-nav-enabled body #menu ul a:hover,
                     .drawer-nav-enabled body #menu ul a:focus {
@@ -492,7 +500,7 @@ footer a:hover:after {
 		<ul>
 			<li><a href="./index.html">Introduction</a></li>
 			<li><a href="./history.html">History</a></li>
-			<li><mark><a href="./properties.html">Properties and Structure</a></mark></li>
+			<li class="marked"><mark><a href="./properties.html">Properties and Structure</a></mark></li>
 		</ul>
 		<a id="menu-close" href="#banner"></a>
 	</nav>

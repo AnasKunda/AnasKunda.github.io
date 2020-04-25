@@ -236,6 +236,7 @@ body:not(:target) #menu {
             bottom: 0;
             left: 100%;
             z-index: 3;
+            background: #EDEDED;
                -moz-transition: width .25s ease;
                  -o-transition: width .25s ease;
             -webkit-transition: width .25s ease;
@@ -252,6 +253,7 @@ body:not(:target) #menu {
               .drawer-nav-enabled body #menu ul a {
                     height: auto;
                     text-decoration: none;
+                    background: #EDEDED;
                     color: black;
                 }
  			
@@ -262,13 +264,19 @@ body:not(:target) #menu {
                 	height: 2em;
                 }
 
+                .drawer-nav-enabled body #menu ul li.marked {
+ 				padding-bottom: 0;
+ 			}
+
  			.drawer-nav-enabled body #menu ul mark a {
- 				color: white;
+ 				color: #EDEDED;
+ 				background: black;
 
  			}
                 .drawer-nav-enabled body #menu ul li {
                 	display: block;
                 	padding-bottom: 10px;
+                	background: #EDEDED;
                 }
                     .drawer-nav-enabled body #menu ul a:hover,
                     .drawer-nav-enabled body #menu ul a:focus {
@@ -458,7 +466,7 @@ nav ul li a, nav ul li a:after {
 	<nav id="menu">
 		<ul>
 			<li><a href="./index.html">Introduction</a></li>
-			<li><mark><a href="./history.html">History</a></mark></li>
+			<li class="marked"><mark><a href="./history.html">History</a></mark></li>
 			<li><a href="./properties.html">Properties and Structure</a></li>
 		</ul>
 		<a id="menu-close" href="#banner"></a>
