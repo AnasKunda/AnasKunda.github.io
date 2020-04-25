@@ -314,10 +314,6 @@ body:not(:target) #menu {
     #getActiveMQ-watcher { font-family: "small"; }
 }
 
-
-
-}
-
 @media only screen and (min-width:450px)
 {
 	
@@ -369,13 +365,11 @@ nav ul li a, nav ul li a:after {
 
       #nav-jump:focus {
             right: 1em;
-            left:  auto;
+            left: auto;
         }
 
         #menu {
-        position: absolute;
-        top: 3.75em;
-        right: 0;
+        position: static;
         white-space: nowrap;
     }
 
@@ -389,6 +383,7 @@ nav ul li a, nav ul li a:after {
         #menu a {
             border: 0;
             display: inline-block;
+
         }
 
          #menu a {
@@ -396,6 +391,7 @@ nav ul li a, nav ul li a:after {
             color: #fff;
             line-height: 2em;
             padding: 0 0.8em 5px;
+            font-family: Lato, Arial;
         }
 
          #menu mark a {
@@ -449,6 +445,10 @@ nav ul li a, nav ul li a:after {
 
         /* for getActiveMQ */
     #getActiveMQ-watcher { font-family: "medium"; }
+ 
+footer {
+	padding-bottom: 10px;
+}
     
 }
 
